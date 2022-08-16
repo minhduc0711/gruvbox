@@ -914,6 +914,29 @@ call s:HL('CocInfoHighlight', s:none, s:none, s:undercurl, s:yellow)
 call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
 
 " }}}
+" LSP diagnostics: {{{
+hi! link DiagnosticError GruvboxRed
+hi! link DiagnosticWarn GruvboxOrange
+hi! link DiagnosticInfo GruvboxYellow
+hi! link DiagnosticHint GruvboxBlue
+hi! link DiagnosticSignError GruvboxRed
+hi! link DiagnosticSignWarn GruvboxOrange
+hi! link DiagnosticSignInfo GruvboxYellow
+hi! link DiagnosticSignHint GruvboxBlue
+hi! link DiagnosticFloatingError GruvboxRed
+hi! link DiagnosticFloatingWarn GruvboxOrange
+hi! link DiagnosticFloatingInfo GruvboxYellow
+hi! link DiagnosticFloatingHint GruvboxBlue
+hi! link DiagnosticVirtualTextError GruvboxRed
+hi! link DiagnosticVirtualTextWarn GruvboxOrange
+hi! link DiagnosticVirtualTextInfo GruvboxYellow
+hi! link DiagnosticVirtualTextHint GruvboxBlue
+
+call s:HL('DiagnosticUnderlineError', s:none, s:none, s:undercurl, s:red)
+call s:HL('DiagnosticUnderlineWarn', s:none, s:none, s:undercurl, s:orange)
+call s:HL('DiagnosticUnderlineInfo', s:none, s:none, s:undercurl, s:yellow)
+call s:HL('DiagnosticUnderlineHint', s:none, s:none, s:undercurl, s:blue)
+" }}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
